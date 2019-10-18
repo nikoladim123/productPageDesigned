@@ -194,13 +194,12 @@ nav a{
 .logoBox{
   /* border: 1px solid red; */
   position: relative;
-  margin-left: 5.8vw;
-  margin-top: 1.05vw;
-  display: none;
+  margin-left: 5.0vw;
+  margin-top: 4.05vw;
 }
 
 .logo{
-  width: 10.98209vw;
+  width: 15.98209vw;
 }
 .logoHeart{
   width: 1.7416vw;
@@ -214,6 +213,7 @@ nav a{
   animation-fill-mode: both;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+  display: none;
 }
 
 @keyframes logoHeart {
