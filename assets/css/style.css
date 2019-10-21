@@ -66,12 +66,17 @@ body{
 div{
   position: relative;
   /* margin-bottom: 0.15vw; */
+  /* margin-left: 2vw; */
 }
 
 /* header start */
 @font-face {
   font-family: 'Lato-Regular';
   src:url('../fonts/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src:url('../fonts/Lato-Bold.ttf');
 }
 
 @font-face {
@@ -88,30 +93,71 @@ body{
   min-height: 101vw;
   margin: 0;
 }
-
+.layerBG{
+  position: absolute;
+  width: 32vw;
+  top: 0;
+  left: 19vw;
+}
 nav{
-  padding-top: 1.1vw;
-  padding-left: 49.7vw;
+  /* padding-top: 1.1vw; */
+  padding-left: 4.7vw;
   display: flex;
   /* border: 1px solid red; */
   align-items: center;
   color: #555555;
+  position: relative;
+  z-index: 1;
+  font-family: 'Lato-Regular';
+  padding-top: 0.5vw;
+  border-bottom: 5px solid white;
 }
 
 nav a{
-  color: #555555;
+  color: white;
+  font-family: 'Lato-Regular';
+  font-size: 1.0622vw;
+}
+
+.gift{
+  width: 1.404358vw;
+}
+.freeShp{
+  font-size: 0.8716vw;
+  margin-left: 0.2vw;
+  font-weight: 800;
+}
+.shopA{color: #f36207;text-decoration: none;font-family: 'Lato-Bold';font-size: 1.2vw;margin-left: 7vw;/* margin-right: 3vw; */}
+
+.navLinks{
+  margin-left: 6vw;
+}
+.navLinks a{
+  text-decoration: none;
+  color: #f36207;
+  margin-right: 2vw;
+}
+nav a:hover{
+  text-decoration: underline ;
 }
 
 .search{
   width: 1.3546vw;
+  margin-left: 1.5vw;
+}
+.search:hover{
+  cursor: pointer;
 }
 .cardBox{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 6.7vw;
+  margin-left: 4.7vw;
   position: relative;
   top: -0.8vw;
+}
+.cardBox:hover{
+  cursor: pointer;
 }
 .cardBox p{
   font-family: 'Lato-Regular';
@@ -121,7 +167,7 @@ nav a{
   left: 0.1vw;
   top: 0.2vw;
   font-weight: 900;
-  color: #f26207;
+  color: #88ffff;
 }
 
 .myAcc{
@@ -129,6 +175,7 @@ nav a{
   font-size: 0.87082vw;
   margin-left: 0.45vw;
   font-weight: 800;
+  color: white;
 }
 
 .myAcc:hover{
@@ -137,8 +184,8 @@ nav a{
 }
 .number{
   font-family: 'Lato-Regular';
-  font-size: 1.1611vw;
-  margin-left: 9.7vw;
+  font-size: 1.0611vw;
+  margin-left: 5.7vw;
   text-decoration: none;
 }
 
@@ -151,11 +198,25 @@ nav a{
 }
 .userIcon{
   width: 1.2094vw;
-  margin-left: 2.7vw;
+  margin-left: 1.5vw;
+}
+
+.flagRef{
+  display: block;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5vw;
+  justify-content: center;
+  }
 }
 .flagImg{
   width: 2.8543vw;
-  margin-left: 1.55vw;
+  /* margin-left: 1.55vw; */
 }
 
 /* headerContent */
@@ -168,7 +229,7 @@ nav a{
   width: 83.4059vw;
   height: 64.34446vw;
   background: white;
-  box-shadow: 0px 0px 7.111vw -1.55vw rgba(0,0,0,0.12);
+  box-shadow: 0px 0px 7.111vw -0.55vw rgba(0,0,0,0.12);
 }
 
 .shadowBox{
@@ -188,14 +249,14 @@ nav a{
   position: absolute;
   top: 0;
   right: 0;
-  background: #f36207;
+  background: #ff7083;
 }
 
 .logoBox{
   /* border: 1px solid red; */
   position: relative;
   margin-left: 5.0vw;
-  margin-top: 4.05vw;
+  margin-top: 2.05vw;
 }
 
 .logo{
@@ -231,14 +292,15 @@ nav a{
   height: 44.992vw;
   background: linear-gradient(45deg, rgba(243,223,147,1) 0%, rgba(242,109,14,1) 100%);
   left: 5.05vw;
-  top: 14.45vw;
+  top: 10.45vw;
 }
 
 .legs{
   position: absolute;
-  right: 0;
-  top: -1.05vw;
-  width: 50.7014vw;
+  /* right: 0; */
+  top: -6.5vw;
+  width: 72.7014vw;
+  left: -6.5vw;
 }
 
 .leftTextBox{
@@ -322,7 +384,7 @@ nav a{
   /* border: 1px solid red; */
   position: absolute;
   right: -3.27vw;
-  top: 3.1vw;
+  top: 5.61vw;
   width: 17.0295vw;
   height: 51.2820vw;
   box-shadow: 0px 0px 7.111vw -1.55vw rgba(0,0,0,0.12);
@@ -359,9 +421,9 @@ nav a{
   width: 28vw;
   position: relative;
   /* top: 17vw; */
-  top: -12vw;
+  top: 19vw;
   left: 4vw;
-/* margin: 0; */
+  /* margin: 0; */
 }
 
 .latestProducts p{
@@ -904,10 +966,18 @@ nav a{
   margin-bottom: 0.7vw;
 }
 
-.secThreeOverlayPriceContainer p{
+.prodPriceHov{
   margin: 0;
-  color: #f23509;
-  font-size: 1.4513788vw;
+  color: #f23509 !important;
+  font-family: 'Lato-Regular' !important;
+  font-size: 1.4513788vw !important;
+  position: relative !important;
+  font-size: 1vw !important;
+  font-weight: 900 !important;
+  top: auto !important;
+  left: auto !important;
+  transform: rotate(0) !important;
+  letter-spacing: auto !important;
 }
 /* section three end */
 
