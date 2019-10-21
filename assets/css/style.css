@@ -62,7 +62,7 @@ body{
   /* overflow-x: hidden; */
   padding-bottom: 10vw;
   margin: 0;
-  background: #ff7083;
+  background: #000;
   transition: 5s ease;
 }
 div{
