@@ -62,6 +62,8 @@ body{
   /* overflow-x: hidden; */
   padding-bottom: 10vw;
   margin: 0;
+  background: #ff7083;
+  transition: 5s ease;
 }
 div{
   position: relative;
@@ -383,9 +385,10 @@ nav a:hover{
 
 
 .threeImagesRight{
+  transition: 3s ease;
   /* border: 1px solid red; */
   position: absolute;
-  right: -3.27vw;
+  right: -7.27vw;
   top: 5.61vw;
   width: 17.0295vw;
   height: 51.2820vw;
@@ -417,13 +420,14 @@ nav a:hover{
 
 .latestProducts{
   transition: all 1.5s ease;
+    transition-delay: 1.5s;
   display: flex;
   align-items: center;
   transform: rotate(90deg);
   width: 28vw;
   position: relative;
-  /* top: 17vw; */
-  top: 19vw;
+  /* top: 19vw; */
+  top: -15vw;
   left: 4vw;
   /* margin: 0; */
 }
@@ -432,7 +436,7 @@ nav a:hover{
   color: #f3cc7d;
   margin: 0;
   font-size: 1.45137vw;
-  font-family: 'Lato-Regular';
+  font-family: 'Lato-Bold';
   margin-left: 0.4vw;
 }
 

@@ -27,3 +27,18 @@ function carMoveThree(){
     carouselThree.style.left = '-50%'
   }
 }
+
+// fold
+var threeImagesRight = document.getElementsByClassName('threeImagesRight');
+var latestProducts = document.getElementsByClassName('latestProducts');
+var body = document.getElementsByTagName('body');
+
+function threeImagesRightFun() {
+  threeImagesRight[0].style.right = '-3.27vw';
+  latestProducts[0].style.top = '19vw';
+  body[0].style.background = 'white';
+}
+
+window.addEventListener('load',()=>{
+  threeImagesRightFun()
+})
