@@ -39,6 +39,38 @@ function threeImagesRightFun() {
   body[0].style.background = 'white';
 }
 
+// freeDeliveryAndReturnContainer header
+var freeDeliveryAndReturnContainer = document.getElementsByClassName('freeDeliveryAndReturnContainer');
+var thingsOnSale = document.getElementsByClassName('thingsOnSale');
+var onClearance = document.getElementsByClassName('onClearance');
+var newArivals = document.getElementsByClassName('newArivals');
+var popThisWeek = document.getElementsByClassName('popThisWeek');
+var newsEvents = document.getElementsByClassName('newsEvents');
+
+
+// universal fun
+function universalFun(eTarget) {
+  if(eTarget[0].getClientRects()[0].top < window.innerHeight / 1.5){
+    eTarget[0].style.top = '0';
+    eTarget[0].style.opacity = '1';
+  }else{
+    eTarget[0].style.top = '3vw';
+    eTarget[0].style.opacity = '0';
+  }
+}
+
+
+// window listeners
 window.addEventListener('load',()=>{
-  threeImagesRightFun()
-})
+  threeImagesRightFun();
+});
+
+window.addEventListener('scroll',()=>{
+  // freeDeliveryAndReturnContainerFun();
+  universalFun(freeDeliveryAndReturnContainer);
+  universalFun(thingsOnSale);
+  universalFun(onClearance);
+  universalFun(newArivals);
+  universalFun(popThisWeek);
+  universalFun(newsEvents);
+});
