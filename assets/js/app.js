@@ -100,6 +100,19 @@ function sectionFiveFun() {
   }
 }
 
+// carousel section anims
+var pinkBox = document.getElementsByClassName('pinkBox');
+
+function pinkBoxFun() {
+  if(pinkBox[0].getClientRects()[0].top < window.innerHeight / 1.5){
+    pinkBox[0].style.background = 'rgb(248,243,239)';
+  }else{
+    pinkBox[0].style.background = 'white';
+  }
+}
+
+
+
 // window listeners
 window.addEventListener('load',()=>{
   threeImagesRightFun();
@@ -116,4 +129,5 @@ window.addEventListener('scroll',()=>{
   revealFireFun();
   secFourBoxFun();
   sectionFiveFun();
+  pinkBoxFun();
 });
