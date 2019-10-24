@@ -77,6 +77,28 @@ function revealFireFun() {
 }
 
 
+// on clearance anim
+var secFourBox = document.getElementsByClassName('secFourBox');
+function secFourBoxFun() {
+  if(secFourBox[0].getClientRects()[0].top < window.innerHeight / 2.5){
+    secFourBox[0].style.left = '0vw';
+    secFourBox[1].style.left = '0vw';
+  }else{
+    secFourBox[0].style.left = '16.1vw';
+    secFourBox[1].style.left = '-18vw';
+  }
+}
+
+// insta section anims
+var sectionFive = document.getElementsByClassName('sectionFive');
+
+function sectionFiveFun() {
+  if(sectionFive[0].getClientRects()[0].top < window.innerHeight / 4){
+    sectionFive[0].style.background = 'white';
+  }else{
+    sectionFive[0].style.background = '#ededed';
+  }
+}
 
 // window listeners
 window.addEventListener('load',()=>{
@@ -92,4 +114,6 @@ window.addEventListener('scroll',()=>{
   universalFun(popThisWeek);
   universalFun(newsEvents);
   revealFireFun();
+  secFourBoxFun();
+  sectionFiveFun();
 });
