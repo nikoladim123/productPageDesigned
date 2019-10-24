@@ -60,6 +60,24 @@ function universalFun(eTarget) {
 }
 
 
+// secThree reveal anim
+var revealAnimContainer = document.getElementsByClassName('revealAnimContainer');
+var rev = document.getElementsByClassName('rev');
+
+function revealFireFun() {
+  if(revealAnimContainer[0].getClientRects()[0].top < window.innerHeight / 3){
+    rev[0].style.width = '0%';
+    rev[1].style.width = '0%';
+    rev[2].style.width = '0%';
+  }else{
+    rev[0].style.width = '100%';
+    rev[1].style.width = '66.6%';
+    rev[2].style.width = '33.3%';
+  }
+}
+
+
+
 // window listeners
 window.addEventListener('load',()=>{
   threeImagesRightFun();
@@ -73,4 +91,5 @@ window.addEventListener('scroll',()=>{
   universalFun(newArivals);
   universalFun(popThisWeek);
   universalFun(newsEvents);
+  revealFireFun();
 });

@@ -668,6 +668,39 @@ nav a:hover{
   /* transition: rota; */
   transform: rotate(45deg);
 }
+
+.revealAnimContainer{
+position: absolute;
+/* border: 1px solid red; */
+width: 100%;
+height: 110%;
+overflow: hidden;
+top: -5%;
+left: 0;
+}
+.rev{
+  transition: 1s ease;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #feae35;
+  z-index: 2;
+}
+.rev:nth-child(2){
+  transition-delay: 0.5s;
+  left: 33.333%;
+  width: 66.6%;
+  background: #ef726c;
+  z-index: 1;
+}
+.rev:nth-child(3){
+  transition-delay: 1s;
+  left:  66.666%;
+  width: 33.333%;
+  background: #fbbf8b;
+  z-index: 0;
+}
 .secThreeContainer{
   /* border: 1px solid red; */
   position: relative;
