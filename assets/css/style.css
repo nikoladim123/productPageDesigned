@@ -339,9 +339,9 @@ nav a:hover{
 .legs{
   position: absolute;
   /* right: 0; */
-  top: -6.5vw;
-  width: 72.7014vw;
-  left: -6.5vw;
+  top: -1.2vw;
+  width: 62.7014vw;
+  left: 0vw;
 }
 
 .leftTextBox{
@@ -400,7 +400,7 @@ nav a:hover{
   background-color: #552a0e;
   font-size: 1.513vw;
   position: absolute;
-  bottom: 5.55vw;
+  bottom: 3.55vw;
   left: 3.3vw;
   font-weight: 900;
   letter-spacing: 0.1vw;
