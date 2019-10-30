@@ -149,7 +149,7 @@ nav a{
   align-items: center;
   width: 7vw;
   justify-content: center;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .megaMenu{
@@ -162,9 +162,118 @@ nav a{
   left: 0;
   top: 4.5vw;
 }
-.megaMenu img{
+.mmNav{
+  border-top: 0.15vw solid #e0e0e0;
+  display: flex;
+}
+.shopCosmeticsBox{
+  width: 20.4vw;
+  background: white;
+  display: flex;
+  height: 5.1vw;
+  flex-shrink: 0;
+  align-items: flex-end;
+}
+.shopCosmeticsBox a{
+  color: #991705;
+  font-size: 0.9685vw;
+  font-family: 'Lato-Bold';
+  text-decoration: none;
+  margin-left: 1.2vw;
+  margin-bottom: 0.51vw;
+}
+.shopCosmeticsBox a:hover{
+  text-decoration: none;
+}
+.shopCosmeticsBox a span{
+  color: black;
+  font-size: 1.452vw;
+  margin-left: 1vw;
+}
+.mmNavItems{
+  display: flex;
+  justify-content: space-around;
+  background: #e0e0e0;
+  width: -webkit-fill-available;
+  padding-top: 0vw;
+  /* position: relative; */
+  /* top: 0vw; */
+}
+.mmNavItems p{
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.452vw;
+  color: #a4a4a4;
+  position: relative;
+  top: 1vw;
+  transition: 0.5s ease;
+}
+.mmNavItems p:hover{
+  filter: brightness(1.5);
+  text-decoration: underline;
+}
+.mmHolderImg{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  opacity: 0.5;
+}
+
+
+.mmContent{
+  display: flex;
+}
+.mmBanerImage{
+  width: 20.4vw;
+  flex-shrink: 0;
+}
+
+.faceBox{
   width: 100%;
 }
+
+.faceBox p{
+  cursor: pointer;
+  user-select: none;
+  padding-left: 2vw;
+  font-size: 0.8716vw;
+  font-family: 'Lato-Regular';
+}
+
+.faceBox p:hover{
+  text-decoration: underline;
+}
+
+.bottom{
+  width: 100%;
+  cursor: pointer;
+}
+
+.mmContentBox{
+
+display: flex;
+
+width: -webkit-fill-available;
+
+justify-content: space-around;
+
+padding-right: 2vw;
+}
+
+.mmContentBox a{
+  font-family: 'Lato-Bold';
+  text-decoration: none;
+  color: #991705;
+  font-size: 1.0653vw;
+  margin-top: 1.7vw;
+  padding-left: 2vw;
+  display: block;
+  padding-bottom: 0.8vw;
+  border-bottom: 1px solid #e0e0e0;
+  width: 100%;
+}
+
 
 .shopA{color: #ef9e43;text-decoration: none;font-family: 'Lato-Bold';font-size: 1.2vw;/* margin-right: 3vw; */}
 
@@ -290,7 +399,7 @@ nav a:hover{
   position: absolute;
   top: 0;
   right: 0;
-  background: #562a0e;
+  background: rgb(7,7,0);
 }
 
 .logoBox{
@@ -397,7 +506,7 @@ nav a:hover{
   height: 3.0962vw;
   border-radius: 10vw;
   color: white;
-  background-color: #552a0e;
+  background: rgb(7,7,0);
   font-size: 1.513vw;
   position: absolute;
   bottom: 3.55vw;

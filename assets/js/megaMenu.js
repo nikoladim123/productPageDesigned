@@ -10,7 +10,7 @@ shopMegaMenuContainer[0].addEventListener('mouseenter',()=>{
 
 shopMegaMenuContainer[0].addEventListener('mouseleave',()=>{
   megaMenu[0].style.maxHeight = '0vw';
-  // fixedNav[0].style.background = 'transparent';
+  fixedNav[0].style.background = 'transparent';
   navColor();
   fixedNav[0].style.boxShadow = '10px 10px 0px 200vw rgba(0,0,0,0.0)';
 });
@@ -30,7 +30,7 @@ function navhideShow() {
 // nav color fun
 function navColor() {
   if(window.scrollY > 5){
-    fixedNav[0].style.background = 'black';
+    fixedNav[0].style.background = 'rgb(7,7,0)';
   }else{
     fixedNav[0].style.background = 'transparent';
   }
