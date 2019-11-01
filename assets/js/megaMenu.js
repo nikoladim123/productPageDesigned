@@ -50,7 +50,9 @@ function changeMMHeading(e,img) {
     mmLeftHeading[0].innerText = e;
     mmLeftHeading[0].style.opacity = '1';
     mmBanerImage[0].src = img;
-    mmBanerImage[0].style.opacity = '1';
+    setTimeout(function () {
+      mmBanerImage[0].style.opacity = '1';
+    }, 100);
   }, 300);
 }
 mmnavHoverButtons[0].addEventListener('mouseenter',()=>{
