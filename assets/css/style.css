@@ -226,8 +226,11 @@ nav a{
   display: flex;
 }
 .mmBanerImage{
+  transition: 0.3s;
   width: 20.4vw;
   flex-shrink: 0;
+  max-height: 21vw;
+  object-fit: contain;
 }
 
 .faceBox{

@@ -4,6 +4,7 @@ var fixedNav = document.getElementsByClassName('fixedNav');
 var mmnavHoverButtons = document.getElementsByClassName('mmnavHoverButtons');
 var mmBottomMovingContainer = document.getElementsByClassName('mmBottomMovingContainer');
 var mmLeftHeading = document.getElementsByClassName('mmLeftHeading');
+var mmBanerImage = document.getElementsByClassName('mmBanerImage');
 
 
 
@@ -42,24 +43,27 @@ function navColor() {
 }
 
 // mmnavHoverButtons hover change bottom
-function changeMMHeading(e) {
+function changeMMHeading(e,img) {
   mmLeftHeading[0].style.opacity = '0';
+  mmBanerImage[0].style.opacity = '0';
   setTimeout(function () {
     mmLeftHeading[0].innerText = e;
     mmLeftHeading[0].style.opacity = '1';
+    mmBanerImage[0].src = img;
+    mmBanerImage[0].style.opacity = '1';
   }, 300);
 }
 mmnavHoverButtons[0].addEventListener('mouseenter',()=>{
   mmBottomMovingContainer[0].style.top = '0vw';
-  changeMMHeading('ACCESSORIES');
+  changeMMHeading('ACCESSORIES','assets/images/megaMenu/prod1.png');
 });
 mmnavHoverButtons[1].addEventListener('mouseenter',()=>{
   mmBottomMovingContainer[0].style.top = '-14vw';
-  changeMMHeading('CLOTHING');
+  changeMMHeading('CLOTHING','assets/images/megaMenu/prod2.png');
 });
 mmnavHoverButtons[2].addEventListener('mouseenter',()=>{
   mmBottomMovingContainer[0].style.top = '-28vw';
-  changeMMHeading('BEST SELLERS');
+  changeMMHeading('BEST SELLERS','assets/images/megaMenu/prod3.png');
 });
 
 
