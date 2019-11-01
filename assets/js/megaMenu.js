@@ -3,6 +3,8 @@ var megaMenu = document.getElementsByClassName('megaMenu');
 var fixedNav = document.getElementsByClassName('fixedNav');
 var mmnavHoverButtons = document.getElementsByClassName('mmnavHoverButtons');
 var mmBottomMovingContainer = document.getElementsByClassName('mmBottomMovingContainer');
+var mmLeftHeading = document.getElementsByClassName('mmLeftHeading');
+
 
 
 shopMegaMenuContainer[0].addEventListener('mouseenter',()=>{
@@ -40,14 +42,24 @@ function navColor() {
 }
 
 // mmnavHoverButtons hover change bottom
+function changeMMHeading(e) {
+  mmLeftHeading[0].style.opacity = '0';
+  setTimeout(function () {
+    mmLeftHeading[0].innerText = e;
+    mmLeftHeading[0].style.opacity = '1';
+  }, 300);
+}
 mmnavHoverButtons[0].addEventListener('mouseenter',()=>{
   mmBottomMovingContainer[0].style.top = '0vw';
+  changeMMHeading('ACCESSORIES');
 });
 mmnavHoverButtons[1].addEventListener('mouseenter',()=>{
   mmBottomMovingContainer[0].style.top = '-14vw';
+  changeMMHeading('CLOTHING');
 });
 mmnavHoverButtons[2].addEventListener('mouseenter',()=>{
   mmBottomMovingContainer[0].style.top = '-28vw';
+  changeMMHeading('BEST SELLERS');
 });
 
 

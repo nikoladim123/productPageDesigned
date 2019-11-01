@@ -186,6 +186,7 @@ nav a{
   text-decoration: none;
 }
 .shopCosmeticsBox a span{
+  transition: 0.3s;
   color: black;
   font-size: 1.452vw;
   margin-left: 1vw;
@@ -288,9 +289,9 @@ nav a{
   display: flex;
   position: relative;
   justify-content: space-around;
-  padding: 2vw 5vw;
+  padding: 2.5vw 7vw;
+  padding-left: 22vw;
   border-top: 1px solid rgb(230,230,230);
-
 }
 .mmBottomBox{
   display: flex;
@@ -300,10 +301,10 @@ nav a{
 .mmBottomBox img{
   transition: 0.5s ease;
   cursor: pointer;
-  width: 7vw;
+  width: 5vw;
   /* max-height: 11vw; */
   flex-shrink: 0;
-  max-height: 10vw;
+  max-height: 7vw;
   object-fit: contain;
 }
 .mmBottomBox img:hover{
@@ -320,7 +321,7 @@ margin-bottom: 0.5vw;
 
 font-size: 1.3vw;
 }
-.mmBottomTextBox p{width: 15vw;margin-left: 1vw;font-size: 1.1vw;}
+.mmBottomTextBox p{width: 12vw;margin-left: 1vw;font-size: 0.8716vw;}
 
 
 .shopA{

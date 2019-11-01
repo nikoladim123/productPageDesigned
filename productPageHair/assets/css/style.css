@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'Morganite-Thin';
+  src:url('../../../assets/fonts/Morganite/Morganite-Thin.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Trajan-Pro-Regular';
   src:url('../fonts/Trajan-Pro-Regular.ttf') format('truetype');
 }
@@ -47,9 +52,11 @@ header h1{
   position: absolute;
   top: 8.8vw;
   left: 5.8vw;
-  color: white;
-  font-size: 6.024096vw;
+  color: #5b290f;
+  font-size: 14.527vw;
   font-family: 'PlayfairDisplay-Bold';
+  font-weight: 100;
+  font-family: 'Morganite-Thin';
 }
 
 /* filter */
