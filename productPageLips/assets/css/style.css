@@ -1,0 +1,527 @@
+@font-face {
+  font-family: 'Trajan-Pro-Regular';
+  src:url('../fonts/Trajan-Pro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSans-Regular';
+  src:url('../fonts/FiraSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSans-Bold';
+  src:url('../fonts/FiraSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'FiraSans-Thin';
+  src:url('../fonts/FiraSans-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Bold';
+  src:url('../fonts/PlayfairDisplay-Bold.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'PlayfairDisplay-Regular';
+  src:url('../fonts/PlayfairDisplay-Regular.otf') format('truetype');
+}
+
+body{
+  margin: 0;
+}
+div{
+  position: relative;
+}
+header{
+
+}
+
+.baner{
+  width: 100%;
+}
+
+
+header h1{
+  position: absolute;
+  top: 8.8vw;
+  left: 5.8vw;
+  color: white;
+  font-size: 6.024096vw;
+  font-family: 'PlayfairDisplay-Bold';
+}
+
+/* filter */
+.filterContainer{
+  transition: 1s ease;
+  position: absolute;
+  top: 0vw;
+  width: 5vw;
+  max-height: 2vw;
+  border: 1px solid rgba(230,230,230);
+  z-index: 1;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  overflow: hidden;
+  background: white;
+  font-family: 'FiraSans-Regular';
+  padding-left: 1vw;
+  padding-top: 0.5vw
+}
+.filterContainer:hover{
+  max-height: 30vw;
+  width: 10vw;
+  background: rgba(255,230,230);
+}
+.filterContainer p span{
+  display: inline-block;
+  transition: 0.5s ease;
+}
+.filterContainer:hover .filterSpan{
+  transform: rotate(90deg);
+}
+.filterContainer p{
+  user-select: none;
+  font-size: 1.5vw;
+  font-family: 'PlayfairDisplay-Bold';
+  font-family: 'FiraSans-Regular';
+  margin: 0;
+  margin-bottom: 1vw;
+}
+
+.filtersBox{
+  width: 15vw;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+/* section three start */
+.prodFilters{
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  margin-top: 3.2vw;
+}
+
+.prodFilters p{
+  transition: all 0.5s ease;
+  /* margin: 0.5vw; */
+  font-size: 1.15662vw;
+  margin-bottom: 1.8vw;
+  color: #515154;
+  margin-left: 0.8vw;
+  font-family: 'PlayfairDisplay-Regular';
+  margin-right: 0.8vw;
+}
+.prodFilters p:hover{
+  cursor: pointer;
+  color: #ef5723;
+}
+
+.breadCrubs{
+  position: absolute;
+  left: 3.2vw;
+  bottom: 0.8vw;
+}
+
+.breadCrubs a{
+  text-decoration: none;
+  font-size: 1.156626vw;
+  color: #45454a;
+  margin-right: 1vw;
+  font-weight: 800;
+  font-family: 'PlayfairDisplay-Regular';
+}
+
+.breadCrubs a:hover{
+  text-decoration: underline;
+}
+
+
+
+.sectionThree{
+  padding-top: 2vw;
+  position: relative;
+}
+.sectionThree h2{
+  font-family: 'PlayfairDisplay-Regular';
+  text-align: center;
+  font-size: 2.222vw;
+  color: #555555;
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 0.3vw;
+}
+.secThreeContainer{
+  display: flex;
+  width: 100%;
+  height: 38.7034vw;
+}
+
+.secThreeBoxImageContainer{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.secThreeBoxImageContainer img{
+  width: 100%;
+}
+.secThreeBox{
+  display: flex;
+  width: 100%;
+  /* overflow: hidden; */
+  align-items: center;
+  justify-content: center;
+}
+.secThreeBox:nth-child(1){
+  background: #e8e9e9;
+}
+.secThreeBox:nth-child(2){
+  background: #f2f1f1;
+}
+.secThreeBox:nth-child(3){
+  background: #ededed;
+}
+.secThreeBox:nth-child(3) img{
+  position: relative;
+  /* left: -2vw; */
+  /* top: 9vw; */
+}
+
+.secThreeBox:hover > .secThreeOverlay{
+  opacity: 1;
+}
+
+.secThreeOverlay{
+  transition: all 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(182,192,192,0.93);
+}
+
+.heart{
+  transition: all 0.6s ease;
+  opacity: 0.26;
+  fill:transparent;
+  stroke:#f23509;
+  stroke-width: 0.12vw;
+  width: 2.4vw;
+  position: absolute;
+  right: 1.7vw;
+  top: 1.5vw;
+}
+.heart:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+.secThreeBox:hover .secThreeSocMed{
+  transition: all 0.5s ease;
+  transition-delay: 0.3s;
+  opacity: 1;
+  top: 11vw;
+}
+.secThreeSocMed{
+  transition: all 0.5s ease;
+  transition-delay: 0s;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  top: 8vw;
+  opacity: 0;
+}
+
+.secThreeSocMed a{
+  transition: all 0.5s ease;
+  width: 4.35413vw;
+  height: 4.35413vw;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2vw;
+  text-decoration: none;
+  color: black;
+  margin: 0.169327vw;
+  border: 1px solid transparent;
+}
+.secThreeSocMed a:hover{
+  border: 1px solid black;
+}
+.secThreeCartButtonBox{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid red; */
+  margin-top: 25vw;
+}
+.secThreeCartButton{
+  transition: all 0.5s ease;
+  width: 16.594vw;
+  height: 3.193vw;
+  border: 1px solid black;
+  background: transparent;
+  font-size: 1.45137vw;
+  color: #f23509;
+  font-family: 'PlayfairDisplay-Bold';
+  position: relative;
+}
+
+.secThreeCartButton:hover{
+  cursor: pointer;
+  border:1px dotted black;
+}
+
+.secThreeBox:hover .secThreeOverlayPriceContainer{
+  bottom: -4.25vw;
+}
+
+.secThreeOverlayPriceContainer{
+  transition: all 0.5s ease;
+  transition-delay: 0.3s;
+  /* border: 1px solid red; */
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0vw;
+  left: 0;
+}
+
+.secThreeOverlayPriceContainer h4{
+  color: #b6b6b6;
+  font-family: 'PlayfairDisplay-Regular';
+  font-size: 1.06434vw;
+  margin: 0;
+  font-weight: 100;
+  margin-bottom: 0.7vw;
+}
+
+.secThreeOverlayPriceContainer p{
+  margin: 0;
+  color: #f23509;
+  font-size: 1.4513788vw;
+}
+/* section three end */
+
+
+/* sectionSingleProd start */
+.sectionSingleProd{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 9.7vw;
+}
+.secFourProd{
+  width: 33%;
+}
+
+.sectionSingleProd h2{
+  font-family: 'PlayfairDisplay-Regular';
+  color: #5d5a5c;
+  font-size: 1.44578vw;
+  margin-top: 13vw;
+  margin-bottom: 1.3vw;
+}
+/* sectionSingleProd end */
+
+/* section Two start */
+.sectionTwo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.secTwoGridContainer{
+  /* border: 1px solid red; */
+  width: 70.6821vw;
+  height: 45.96vw;
+  margin-top: 6.66734vw;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2.66734vw;
+  /* margin-bottom: 12vw; */
+}
+
+.secTwoGridBox{cursor: pointer;/* border: 1px solid green; */position: relative;overflow: hidden;/* display: flex; *//* align-items: center; *//* justify-content: center; */}
+.secTwoGridBox img{
+  width: 100%;
+  /* height: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.secTwoGridBox:nth-child(1){
+  grid-column: 1/2;
+  /* position: relative; */
+  grid-row: 1/3;
+}
+.secTwoGridBox:nth-child(2){
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.secTwoGridBox:nth-child(3){
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.secTwoGridBox:hover > .secTwoGridOverlay{
+  left: 5%;
+  top: 5%;
+  width: 90%;
+  height: 90%;
+  opacity: 1;
+}
+.secTwoGridOverlay{
+  opacity: 0;
+  transition: all 0.5s ease;
+  width: 100%;
+  height: 100%;
+  border:1px solid #ec3509;
+  /* background: blue; */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.secTwoGridOverlay h3{
+  pointer-events: none;
+  transition: all 0.5s ease;
+  color: white;
+  font-family: 'PlayfairDisplay-Regular';
+  font-size: 4.8379vw;
+  margin: 0;
+  position: absolute;
+  bottom: 1vw;
+  line-height: 0.98;
+  left: 0;
+}
+.secTwoGridOverlay h3 span{
+  left: 4vw;
+  transition: all 0.5s ease;
+  font-size: 2.90275vw;
+  position: relative;
+}
+
+.secTwoGridOverlay:hover > .secTwoHthree{
+  left:1vw;
+}
+
+.secTwoGridOverlay:hover > .secTwoHthreeSpan{
+  left:5.5vw;
+}
+
+
+
+.freeDeliveryAndReturnContainer{
+  width: 62.0706vw;
+  text-align: center;
+  padding: 1px;
+  margin-bottom: 12vw;
+  background-color: #c5c6c7;
+  /* padding-top: 2vw; */
+  margin-top: 2.66vw;
+  padding-bottom: 1.5vw;
+}
+
+.freeDeliveryAndReturnContainer h2{
+  font-family: 'PlayfairDisplay-Regular';
+  font-size: 2.3vw;
+  color: #4e4f52;
+  margin: 0;
+  /* background-color: #c5c6c7; */
+  margin-top: 1.6vw;
+  font-weight: 100;
+}
+
+.freeDeliveryAndReturnContainer h3{
+  font-family: 'PlayfairDisplay-Regular';
+  font-size: 1.16110vw;
+  color: #4e4f52;
+  margin: 0;
+  background-color: #c5c6c7;
+  margin-top: 1vw;
+}
+/* section Two end */
+
+
+/* custom check box */
+.checBoxesContainer div{
+  margin-right: 2vw;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: 'Lato-Regular';
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #eee;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

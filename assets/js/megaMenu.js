@@ -1,6 +1,9 @@
 var shopMegaMenuContainer = document.getElementsByClassName('shopMegaMenuContainer');
 var megaMenu = document.getElementsByClassName('megaMenu');
 var fixedNav = document.getElementsByClassName('fixedNav');
+var mmnavHoverButtons = document.getElementsByClassName('mmnavHoverButtons');
+var mmBottomMovingContainer = document.getElementsByClassName('mmBottomMovingContainer');
+
 
 shopMegaMenuContainer[0].addEventListener('mouseenter',()=>{
   megaMenu[0].style.maxHeight = '70vw';
@@ -35,6 +38,17 @@ function navColor() {
     fixedNav[0].style.background = 'transparent';
   }
 }
+
+// mmnavHoverButtons hover change bottom
+mmnavHoverButtons[0].addEventListener('mouseenter',()=>{
+  mmBottomMovingContainer[0].style.top = '0vw';
+});
+mmnavHoverButtons[1].addEventListener('mouseenter',()=>{
+  mmBottomMovingContainer[0].style.top = '-14vw';
+});
+mmnavHoverButtons[2].addEventListener('mouseenter',()=>{
+  mmBottomMovingContainer[0].style.top = '-28vw';
+});
 
 
 
