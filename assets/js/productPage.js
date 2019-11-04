@@ -75,9 +75,6 @@ hairMMitem[5].addEventListener('mouseover',()=>{
   hairMMImage[0].src = 'assets/images/productPage/images/cosmetics/secTwo/2.png';
 });
 
-hairMMitem[6].addEventListener('mouseover',()=>{
-  hairMMImage[0].src = 'assets/images/productPage/images/cosmetics/secTwo/3.png';
-});
 
 
 window.addEventListener('scroll',()=>{
