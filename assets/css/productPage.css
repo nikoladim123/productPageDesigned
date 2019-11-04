@@ -100,7 +100,7 @@ nav{
   position: static;
 }
 
-.navItemP{cursor: pointer;margin: 0;height: 100%;display: block;color: white;display: flex;/* border: 1px solid white; */align-items: center;padding: 0 3vw;}
+.navItemP{cursor: pointer;margin: 0;height: 100%;display: block;color: white;display: flex;/* border: 1px solid white; */align-items: center;padding: 0 3vw;font-size: 1.3vw;}
 
 .navItem{
   transition: 0.5s ease;
@@ -149,6 +149,92 @@ nav{
 .cosmeticMMimage{
   transition: 0.5s ease;
   width: 15vw;
+}
+
+
+
+/* eyesMM */
+.eyesMM{
+  transition: 1s ease;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  /* bottom: 0; */
+  width: 100%;
+  height: auto;
+  max-height: 0vh;
+  background: rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,1) 31%, rgba(0,0,0,1) 100%);
+  display: flex;
+  justify-content: space-around;
+}
+.eyesItemsBox{
+  color: white;
+  margin-bottom: 3vw;
+  margin-top: 3vw;
+}
+.eyesItemsBox h3{
+  font-size: 1.2vw;
+}
+.eyesItemsBox a{
+  font-size: 1.1vw;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+.eyesItemsBox a:hover{
+  color: #ef5723;
+  text-decoration: underline;
+}
+
+
+/* hairMM */
+.hairMM{
+  transition: 1s ease;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  /* bottom: 0; */
+  width: 100%;
+  height: auto;
+  max-height: 0vh;
+  background: rgba(0,0,0,0.8);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,1) 31%, rgba(0,0,0,1) 100%);
+  display: flex;
+  justify-content: space-around;
+}
+.hairContainer{
+  /* border: 1px solid red; */
+  display: flex;
+}
+.hairMMimageBox{
+  /* border: 1px solid red; */
+}
+.hairMMItems{
+  padding-top: 6vw;
+  /* border: 1px solid red; */
+}
+.hairMMItems h3{
+  font-size: 1.2vw;
+  color: white;
+}
+.hairMMItems p{
+  cursor: pointer;
+  transition: 0.5s ease;
+  font-size: 1.1vw;
+  margin: 0;
+  margin-bottom: 0.3vw;
+  color: white;
+}
+.hairMMItems p:hover{
+  text-decoration: underline;
+  color: #ef5723;
+}
+.hairMMImage{
+  width: 19vw;
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 
