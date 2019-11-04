@@ -133,11 +133,13 @@ nav a{
 
 .gift{
   width: 1.404358vw;
+  visibility: hidden;
 }
 .freeShp{
   font-size: 0.8716vw;
   margin-left: 0.2vw;
   font-weight: 800;
+  visibility: hidden;
 }
 
 .shopMegaMenuContainer{
@@ -329,11 +331,15 @@ font-size: 1.3vw;
 
 
 .shopA{
+  transition: 0.5s ease;
   color: #ef9e43;
   text-decoration: none;
   font-family: 'Lato-Bold';
   font-size: 1.2vw;
   /* margin-right: 3vw; */
+}
+.shopA:hover{
+  color: #991705;
 }
 
 .navLinks{

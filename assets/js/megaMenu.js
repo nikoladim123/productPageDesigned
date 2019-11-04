@@ -5,6 +5,7 @@ var mmnavHoverButtons = document.getElementsByClassName('mmnavHoverButtons');
 var mmBottomMovingContainer = document.getElementsByClassName('mmBottomMovingContainer');
 var mmLeftHeading = document.getElementsByClassName('mmLeftHeading');
 var mmBanerImage = document.getElementsByClassName('mmBanerImage');
+var shopA = document.getElementsByClassName('shopA');
 
 
 
@@ -12,6 +13,7 @@ shopMegaMenuContainer[0].addEventListener('mouseenter',()=>{
   megaMenu[0].style.maxHeight = '70vw';
   fixedNav[0].style.background = 'black';
   fixedNav[0].style.boxShadow = '10px 10px 0px 200vw rgba(0,0,0,0.9)';
+  shopA[0].style.color = '#991705';
 });
 
 shopMegaMenuContainer[0].addEventListener('mouseleave',()=>{
@@ -19,6 +21,7 @@ shopMegaMenuContainer[0].addEventListener('mouseleave',()=>{
   fixedNav[0].style.background = 'transparent';
   navColor();
   fixedNav[0].style.boxShadow = '10px 10px 0px 200vw rgba(0,0,0,0.0)';
+  shopA[0].style.color = '#ef9e43';
 });
 
 // hide nav

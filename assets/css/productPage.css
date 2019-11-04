@@ -37,7 +37,9 @@
   font-family: 'PlayfairDisplay-Regular';
   src:url('../fonts/PlayfairDisplay-Regular.otf') format('truetype');
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   margin: 0;
   font-family: 'Lato-Regular';

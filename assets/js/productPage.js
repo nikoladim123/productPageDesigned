@@ -80,3 +80,7 @@ hairMMitem[5].addEventListener('mouseover',()=>{
 window.addEventListener('scroll',()=>{
   fixedNavFun();
 });
+
+window.addEventListener('load',()=>{
+  window.scrollBy(0,window.innerWidth /100 *35);
+});
