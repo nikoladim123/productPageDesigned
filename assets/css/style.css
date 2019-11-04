@@ -210,8 +210,9 @@ nav a{
   transition: 0.5s ease;
 }
 .mmNavItems p:hover{
-  filter: brightness(1.5);
+  /* filter: brightness(1.5); */
   text-decoration: underline;
+  color: black;
 }
 .mmHolderImg{
   width: 100%;
@@ -293,7 +294,7 @@ nav a{
   position: relative;
   justify-content: space-around;
   padding: 2.5vw 7vw;
-  padding-left: 22vw;
+  padding-left: 14vw;
   border-top: 1px solid rgb(230,230,230);
 }
 .mmBottomBox{
