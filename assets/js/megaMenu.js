@@ -72,22 +72,22 @@ function mmnavPcolorChange(e) {
 mmnavHoverButtons[0].addEventListener('mouseenter',(e)=>{
   mmnavPcolorChange(e);
   mmBottomMovingContainer[0].style.top = '0vw';
-  // changeMMHeading('ACCESSORIES','assets/images/megaMenu/prod2.png');
+  changeMMHeading('ACCESSORIES','assets/images/megaMenu/prod0.png');
 });
 mmnavHoverButtons[1].addEventListener('mouseenter',(e)=>{
   mmnavPcolorChange(e);
   mmBottomMovingContainer[0].style.top = '0vw';
-  // changeMMHeading('ACCESSORIES','assets/images/megaMenu/prod1.png');
+  changeMMHeading('ACCESSORIES','assets/images/megaMenu/accessories.jpg');
 });
 mmnavHoverButtons[2].addEventListener('mouseenter',(e)=>{
   mmnavPcolorChange(e);
   mmBottomMovingContainer[0].style.top = '-14vw';
-  // changeMMHeading('CLOTHING','assets/images/megaMenu/prod2.png');
+  changeMMHeading('CLOTHING','assets/images/megaMenu/prod2.png');
 });
 mmnavHoverButtons[3].addEventListener('mouseenter',(e)=>{
   mmnavPcolorChange(e);
   mmBottomMovingContainer[0].style.top = '-28vw';
-  // changeMMHeading('BEST SELLERS','assets/images/megaMenu/prod3.png');
+  changeMMHeading('BEST SELLERS','assets/images/megaMenu/category.jpg');
 });
 
 
