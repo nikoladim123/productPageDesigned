@@ -131,6 +131,14 @@ nav a{
   font-size: 1.0622vw;
 }
 
+.logoAbsolute{
+  z-index: -1;
+  transition: 0.5s ease;
+  position: absolute;
+  left: 2%;
+  height: 50%;
+  top: 25%;
+}
 .gift{
   width: 1.404358vw;
   visibility: hidden;
@@ -168,31 +176,7 @@ nav a{
   border-top: 0.15vw solid #e0e0e0;
   display: flex;
 }
-.shopCosmeticsBox{
-  width: 20.4vw;
-  background: white;
-  display: flex;
-  height: 5.1vw;
-  flex-shrink: 0;
-  align-items: flex-end;
-}
-.shopCosmeticsBox a{
-  color: #991705;
-  font-size: 0.9685vw;
-  font-family: 'Lato-Bold';
-  text-decoration: none;
-  margin-left: 1.2vw;
-  margin-bottom: 0.51vw;
-}
-.shopCosmeticsBox a:hover{
-  text-decoration: none;
-}
-.shopCosmeticsBox a span{
-  transition: 0.3s;
-  color: black;
-  font-size: 1.452vw;
-  margin-left: 1vw;
-}
+
 .mmNavItems{
   display: flex;
   justify-content: space-around;
@@ -208,13 +192,29 @@ nav a{
   font-size: 1.452vw;
   color: #a4a4a4;
   position: relative;
-  top: 1vw;
+  /* top: 1vw; */
+  width: 100%;
   transition: 0.5s ease;
+  text-align: center;
+  height: 4vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1vw;
 }
 .mmNavItems p:hover{
   /* filter: brightness(1.5); */
   text-decoration: underline;
   color: black;
+  background: white;
+}
+.mmNavItems p span{
+  font-size: 0.9685vw;
+  font-family: 'Lato-Bold';
+  text-decoration: none;
+  color: #991705;
+  padding-right: 1vw;
 }
 .mmHolderImg{
   width: 100%;
@@ -230,9 +230,10 @@ nav a{
 }
 .mmBanerImage{
   transition: 0.3s;
-  width: 20.4vw;
+  width: 20.9vw;
   flex-shrink: 0;
   max-height: 21vw;
+  /* padding-top: 1vw; */
   object-fit: contain;
 }
 
@@ -468,6 +469,7 @@ nav a:hover{
 }
 
 .logoBox{
+  visibility: hidden;
   /* border: 1px solid red; */
   position: relative;
   margin-left: 5.0vw;
@@ -711,8 +713,9 @@ nav a:hover{
   font-size: 11.4094vw;
   position: relative;
   letter-spacing: 0.7vw;
-  left: 12vw;
+  left: 7vw;
   top: -2vw;
+  font-weight: 00;
 }
 
 .gridBoxThree:hover > .insideLayerTwo{

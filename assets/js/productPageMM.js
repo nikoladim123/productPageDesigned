@@ -27,7 +27,7 @@ shopMegaMenuContainer[0].addEventListener('mouseleave',()=>{
 // hide nav
 function navhideShow() {
   if(this.oldScroll < this.scrollY){
-    fixedNav[0].style.top = '-4.4vw';
+    fixedNav[0].style.top = '-6.4vw';
     console.log(6);
   }else{
     fixedNav[0].style.top = '0vw';
@@ -41,7 +41,7 @@ function navColor() {
   if(window.scrollY > 5){
     fixedNav[0].style.background = 'rgb(7,7,0)';
   }else{
-    fixedNav[0].style.background = 'transparent';
+    fixedNav[0].style.background = 'rgb(7,7,0)';
   }
 }
 
