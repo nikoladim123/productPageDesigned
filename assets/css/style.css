@@ -265,6 +265,7 @@ nav a{
 }
 
 .mmContentBox a{
+  transition: 0.3s ease;
   font-family: 'Lato-Bold';
   text-decoration: none;
   color: #991705;
@@ -275,6 +276,9 @@ nav a{
   padding-bottom: 0.8vw;
   border-bottom: 1px solid #e0e0e0;
   width: 100%;
+}
+.mmContentBox a:hover{
+  color: #ef9e43;
 }
 
 
