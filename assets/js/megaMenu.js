@@ -72,7 +72,7 @@ function mmnavPcolorChange(e) {
 mmnavHoverButtons[0].addEventListener('mouseenter',(e)=>{
   mmnavPcolorChange(e);
   mmBottomMovingContainer[0].style.top = '0vw';
-  changeMMHeading('ACCESSORIES','assets/images/megaMenu/prod0.png');
+  changeMMHeading('ACCESSORIES','assets/images/megaMenu/prod3.png');
 });
 mmnavHoverButtons[1].addEventListener('mouseenter',(e)=>{
   mmnavPcolorChange(e);
